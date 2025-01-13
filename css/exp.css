@@ -1,0 +1,107 @@
+.exp{
+    max-width: 1200px;
+    padding: 40px 20px ;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 40px;
+}
+.exp .suntitulo{
+    color: #cdcccce0;
+}
+
+.epx-texto{
+    font-size: 1.5rem;
+    line-height: 1.33;
+    max-width: 40ch;
+    margin-bottom: 60px;
+    color: #525252;
+}
+.epx-texto strong{
+    color: #141414;
+}
+
+.empresas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    gap: 10px 15px;
+    background-color: #cdcccce0;
+    margin-bottom: 20px;
+    border-radius: 7px;
+    position: relative;
+}
+.empresas::before{
+    content: '';
+    display: block;
+    width: 4px;
+    height: 20px;
+    background: linear-gradient(rgb(30, 137, 245),rgb(0, 103, 207));
+    position: absolute;
+    top: 20px;
+    left: -1px;
+}
+.empresas-ano{
+    position: absolute;
+    top: 22px;
+    left: -80px;
+    text-align: right;
+    width: 65px;
+    color: #7d7d7de0;
+    font-size: 0.875rem;
+}
+.empresas-titulo{
+    /* font-size: 1.125; */
+    line-height: 1.1;
+    font-weight: bold;
+    /* margin-bottom: 10px; */
+}
+
+.empresas-texto{
+    font-size: 0.875rem;
+    line-height: 1.4;
+    color: #525252;
+}
+.empresas-habil{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-content: start;
+}
+.empresas-habil li{
+    font-size: 0.875rem;
+    line-height: 1.4;
+    border-radius: 6px;
+    background-color: #fff;
+    padding: 5px 10px;
+}
+
+
+@media(max-width:925px){
+    .exp{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .exp .suntitulo{
+        color: #141414;
+    }
+    .epx-texto{
+        font-size: 1.25rem;
+    }
+    .empresas-ano{
+        position: initial;
+        order: 1;
+        width: initial;
+        text-align: left;
+        color: #525252;
+    }
+    .empresas-ano::before{
+        content: "Ano: ";
+    }
+}
+
+@media (max-width: 450px){
+    .empresas{
+        grid-template-columns: 1fr;
+    }
+}

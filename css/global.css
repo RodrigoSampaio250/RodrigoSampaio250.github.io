@@ -1,0 +1,36 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'fira Sans', Arial, sans-serif;
+    color: #141414;
+    background-color: rgb(242, 239, 255);
+}
+li{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.suntitulo{
+    font-size: 10rem;
+    word-break: break-all;
+    line-height: 1;
+    text-transform: uppercase;
+    max-width: 4ch;
+}
+
+@media(max-width:925px){
+    .suntitulo{
+        font-size: 3rem;
+        text-transform: capitalize;
+        max-width: initial !important;
+    }
+
+}
